@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+header.navbar {
+    background-color: #F9F9F9;; /* Deep Blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    position: relative;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav a {
+    color: #003566; /* Deep Blue */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    display: block;
+  }
+  
+  nav a:hover {
+    color: #38B6FF; /* Soft blue hover effect */
+  }
+  
+  
+  
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* change as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+    min-width: 180px;
+  }
+  
+  .dropdown-menu li {
+    padding: 0;
+  }
+  
+  .dropdown-menu a {
+    color: #003566;
+    padding: 10px 20px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    color:#38B6FF;  ;
+  }
+  
+  
+  
+   /* Hamburger */
+   .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: 0.3s ease;
+    color: black;
+  }
+  
+  
+    /* Hero */
+    .hero {
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(images-blog/blog.webp) center/cover no-repeat;
+      height: 60vh;
+    }
+    
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-top: 20px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  
+/* ---------Footer-------- */
+  
+.site-footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    min-width: 250px;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #4da6ff;
+  }
+
+  .footer-section .social-media{
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #4da6ff;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  /* Newsletter Form */
+  .newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #4da6ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #3399ff;
+  }

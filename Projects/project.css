@@ -1,0 +1,390 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e6f4fa;
+    color: #003566;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  
+  /* Header */
+  header.navbar {
+    background-color: #F9F9F9;; /* Deep Blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.4s ease, opacity 0.4s ease;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    position: relative;
+  }
+
+  nav ul li {
+    position: relative;
+  }
+  
+  nav a {
+    color: #003566;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    display: block;
+  }
+  
+  nav a:hover {
+    color: #38B6FF; /* Soft blue hover effect */
+  }
+
+
+  
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* change as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+    min-width: 180px;
+  }
+  
+  .dropdown-menu li {
+    padding: 0;
+  }
+  
+  .dropdown-menu a {
+    color: #003566;
+    padding: 10px 20px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+
+ /* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: black;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  color: black;
+}
+
+ /* Hero */
+ .hero {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(pro-images/pro-image.jpg) center/cover no-repeat;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    color: white;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  /*  */
+
+  /* General Styles */
+
+/* Projects Section */
+#projects {
+  background-color: #ffffff;
+  padding: 60px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-section {
+  margin-bottom: 40px;
+}
+
+.project-section h2 {
+  font-size: 2em;
+  color: #003566;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #1f2a44;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  width: 48%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+
+
+.project-details h3 {
+  font-size: 1.5em;
+  color: #2e3b4e;
+  margin-bottom: 10px;
+}
+
+
+
+.project-details p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Hover effect on cards */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Completed and Ongoing Projects Styles
+.completed-projects h2 {
+  color: #4caf50;
+}
+
+.ongoing-projects h2 {
+  color: #ff9800;
+} */
+
+
+
+
+/* Footer */
+
+
+.site-footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #4da6ff;
+}
+
+.footer-section .social-media{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #4da6ff;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+
+
+/* Newsletter Form */
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #4da6ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #3399ff;
+}
+
+
+/* Footer Bottom */
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #4da6ff ;
+    width: 100%;
+    display: none;
+    height: 100vh;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+    background:#4da6ff;
+    /* height: 100vh; */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  /* Adjust dropdown for mobile */
+  .dropdown-menu {
+    position: static;
+    margin-top: 0;
+    background: #4da6ff;
+    display: none !important;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none !important;
+    color: #fff !important;
+
+}
+
+nav a:hover {
+  /* background-color: transparent; */
+  color: #fff !important;
+}
+
+}
+
+/* Animate hamburger into X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+  .projects-list {
+      flex-direction: column;
+  }
+
+  .project-card {
+      width: 100%;
+  }
+
+

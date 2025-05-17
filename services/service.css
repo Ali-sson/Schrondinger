@@ -1,0 +1,531 @@
+*{
+  margin: 0;
+}
+
+/* Header */
+header.navbar {
+    background-color: #F9F9F9;; /* Deep Blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    position: relative;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav a {
+    color: #003566; /* Deep Blue */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    display: block;
+  }
+  
+  nav a:hover {
+    color: #38B6FF; /* Soft blue hover effect */
+  }
+  
+  
+  
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* change as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+    min-width: 180px;
+  }
+  
+  .dropdown-menu li {
+    padding: 0;
+  }
+  
+  .dropdown-menu a {
+    color: #003566;
+    padding: 10px 20px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    color:#38B6FF;  ;
+  }
+  
+  
+  
+   /* Hamburger */
+   .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: 0.3s ease;
+    color: black;
+  }
+  
+  
+    /* Hero */
+    .hero {
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(serv-Image/servicesWall.jpg) center/cover no-repeat;
+    }
+    
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f8ff;
+    color: #002e5d;
+  }
+  
+  /* Approaches Section */
+  .approaches {
+    background-color: #d0eaff;
+    text-align: center;
+    padding: 60px;
+  }
+  
+  .approaches h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .approaches p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Services Section */
+  .service-section {
+    background-color: #e6f3ff;
+    padding: 60px 20px;
+  }
+
+  .service-section h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .service {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 20px auto;
+    border-bottom: 2px solid #003f7d;
+  }
+  
+  .service img {
+    width: 40%;
+    height: 250px;
+    border-radius: 12px;
+  }
+  
+  .service-text {
+    width: 55%;
+  }
+  
+  .service-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .service-text p {
+    font-size: 18px;
+  }
+  
+  /* Products Section */
+  .product-section {
+    background-color: #c9e9ff;
+    padding: 60px 20px;
+  }
+
+  .product-section h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 20px auto;
+    border-bottom: 2px solid #003f7d;
+  }
+  
+  .product img {
+    width: 40%;
+    height: 400px;
+    border-radius: 12px;
+   
+  }
+  
+  .product-text {
+    width: 55%;
+  }
+  
+  .product-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .product-text p {
+    font-size: 18px;
+  }
+  
+  /* Solutions Section */
+  .solutions {
+    background-color: #b0dbff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .solutions h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .solution-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .solution-card {
+    background-color: #e2f3ff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .solution-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .solution-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .solution-card p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #003f7d;
+  }
+  
+  /* our technology */
+
+  .our-technology {
+    background-color: #e6f3ff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .our-technology h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .our-technology img {
+    width: 50%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin: 50px auto;
+  }
+
+  /* request a consultation btn */
+
+  #Request{
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px 0;
+
+  }
+
+  .btn {
+    background-color: #1d9fe0;;
+    color: #003566;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:hover {
+    background-color: #1d9fe0;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+
+  /* ---------Footer-------- */
+  
+  .site-footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    min-width: 250px;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #4da6ff;
+  }
+
+  .footer-section .social-media{
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #4da6ff;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  /* Newsletter Form */
+  .newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #4da6ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #3399ff;
+  }
+  
+  /* Responsive Styles */
+
+  @media (max-width: 768px) {
+
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #4da6ff ;
+    width: 100%;
+    display: none;
+    height: 100vh;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+    background:#4da6ff;
+    /* height: 100vh; */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  /* Adjust dropdown for mobile */
+  .dropdown-menu {
+    position: static;
+    margin-top: 0;
+    background: #4da6ff;
+    display: none !important;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none !important;
+    color: #fff !important;
+
+}
+
+nav a:hover {
+  /* background-color: transparent; */
+  color: #fff !important;
+}
+
+/* Animate hamburger into X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+    .service, .product{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service h2, p {
+      text-align: center;
+    }
+
+    .service img{
+      width: 70%;
+    }
+
+    .product h2{
+      text-align: center;
+    }
+
+    .product p {
+      text-align: left;
+    }
+
+    .product img {
+      width: 70%;
+    }
+
+    .solution-grid {
+      grid-template-columns: repeat(1, 1fr);
+      width: 80%;
+    }
+
+  }
+
+
+  /* reponsive corrections */
+
+   
+  
+  /* Responsive */
+  /* @media (max-width: 768px) { */
+    
+  
+    /* .product-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+   /* */
+    /* .hero h1 {
+      font-size: 2.2rem;
+    }
+
+    .newsletter input {
+        width: 250px; */
+      /* }  */
