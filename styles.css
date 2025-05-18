@@ -696,6 +696,11 @@
   .hero{
     height: 100vh;
   }
+
+   .logo img {
+    width: 40%;
+    height: auto;
+  }
       
   }
 
