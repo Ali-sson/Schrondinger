@@ -199,19 +199,20 @@
   .products-preview .product-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    margin-top: 30px;
   }
 
   .products-preview {
-    background-color: #f7f9fc;
+  background-color: #f7f9fc;
+  padding: 20px;
+  text-align: center;
   }
 
   
   
   .card {
-    background-color: white;
+    /* background-color: white;
     border-radius: 16px;
     padding: 30px 20px;
     max-width: 300px;
@@ -219,7 +220,15 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out; */
+     background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  flex: 1 1 300px; /* allows cards to scale */
+  max-width: 350px;
+  box-sizing: border-box;
+  text-align: left;
   }
   
   .card.show {
@@ -228,10 +237,14 @@
   }
 
   .card img {
-    width: 100%;
+    /* width: 100%;
     height: 300px;
     border-radius: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; */
+     width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  object-fit: cover;
   }
 
     .card img:hover {
@@ -322,14 +335,15 @@
 
   .awards-section {
     background-color: white; /* light blue tint */
-    padding: 60px 20px;
+    padding: 20px 20px;
     text-align: center;
+  ;
   }
   
   .awards-section h2 {
     font-size: 2rem;
     color: #004080; /* deep blue */
-    margin-bottom: 2.5rem;
+    margin-bottom: 20px;
   }
   
   .awards-logos {
@@ -432,20 +446,13 @@
   }
   
   .resource-card {
-    /* background: white;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    max-width: 400px;
-    text-align: left;
-    margin: 20px 0; */
-     background: white;
+  background: white;
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   max-width: 400px;
   text-align: left;
-  margin: 0; /* remove the vertical margin */
+  margin: 0; 
   flex: 1 1 300px
   }
 
