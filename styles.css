@@ -478,14 +478,17 @@
 
 
   .quote-form-section {
-    padding: 3.75rem 1.25rem;
+    padding: 60px 20px;
     text-align: center;
-    margin: 0 auto ;
+    margin: 2rem auto ;
 
   }
   
   .quote-form-section h2 {
-    margin-bottom: 10px;
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #003566; /* deep blue */
+
   }
   
   .quote-form {
