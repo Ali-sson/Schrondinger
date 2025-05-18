@@ -705,6 +705,10 @@
     height: auto;
     margin: 10px;
   }
+
+  .quote-form-section h2{
+    margin: 2rem 0;
+  }
       
   }
 
