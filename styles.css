@@ -8,7 +8,7 @@
   }
 
   html{
-    font-size: 100%;
+    font-size: 62.5%;
  
   }
   
@@ -19,6 +19,13 @@
     line-height: 1.6;
 
   }
+
+  .main-container{
+    max-width: 100%;
+    margin: 0 auto;
+  
+  }
+  
 
   
   
