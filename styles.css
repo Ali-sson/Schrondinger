@@ -426,21 +426,27 @@
   }
   
   .resource-articles {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
   }
   
   .resource-card {
-    background: white;
+    /* background: white;
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     max-width: 400px;
     text-align: left;
-    margin: 20px 0;
+    margin: 20px 0; */
+     background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 400px;
+  text-align: left;
+  margin: 0; /* remove the vertical margin */
+  flex: 1 1 300px
   }
 
   .resource-card img {
