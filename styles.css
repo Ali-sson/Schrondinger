@@ -45,7 +45,7 @@
   }
   
   .logo img {
-    width: 150px;
+    width: 70%;
     height: auto;
   }
   
@@ -248,10 +248,6 @@
     margin-top: 30px;
   }
 
-
-
- 
-  
   
   /* Impact */
   .impact-projects {
@@ -355,8 +351,6 @@
     filter: grayscale(0%);
   }
   
-  
-
 
    /* Services section */
 
@@ -421,9 +415,9 @@
 /* Blog */
 
 .blog-resources {
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     background-color: #f7f9fc;
-    text-align: center;
+    text-align: left;
   }
   
   .blog-resources h2 {
@@ -436,14 +430,15 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
   }
   
   .resource-card {
     background: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    max-width: 500px;
+    max-width: 400px;
     text-align: left;
     margin: 20px 0;
   }
@@ -677,6 +672,20 @@
       }
       
   }
+
+  
+   @media (max-width: 56.4rem) {
+    html{
+      font-size: 70%;
+    } 
+    .resource-articles {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  }
+
+
 
    @media (max-width: 50rem) {
     html{
