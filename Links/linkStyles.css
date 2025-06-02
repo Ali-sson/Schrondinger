@@ -18,7 +18,7 @@ a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
-}
+ }
 
 a:hover {
   color: #007bff;
@@ -176,6 +176,10 @@ nav a:hover {
     min-width: 300px;
     max-width: 50%;
   }
+
+  .about-text {
+  flex: 1;
+}
   
   .about-img img {
     width: 100%;
@@ -578,7 +582,10 @@ h1 {
 
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  html{
+    font-size: 70%;
+  }
   nav {
     position: absolute;
     top: 80px;
@@ -650,6 +657,28 @@ nav a:hover {
       width: 250px;
     }
 
+    /*  */
+
+      .about-row {
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .about-img, .about-text {
+    max-width: 100%;
+    flex: unset;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .knownfor-container {
+    flex-direction: column;
+    align-items: center;
+  }
    
    
 

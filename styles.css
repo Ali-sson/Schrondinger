@@ -11,6 +11,10 @@
     font-size: 62.5%;
  
   }
+
+  a button{
+    background-color:#007BFF;
+  }
   
   body {
     font-family: 'Inter', sans-serif;
