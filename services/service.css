@@ -1,5 +1,12 @@
 *{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 /* Header */
@@ -36,7 +43,7 @@ header.navbar {
     color: #003566; /* Deep Blue */
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: color 0.3s;
     display: block;
   }
@@ -108,14 +115,14 @@ header.navbar {
     
     .hero h1 {
       font-size: 2.8rem;
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
       letter-spacing: -1px;
       color: white;
     }
     
     .hero p {
       font-size: 1.2rem;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
   
 
@@ -136,12 +143,12 @@ body {
   }
   
   .approaches h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
   }
   
   .approaches p {
-    font-size: 18px;
+    font-size: 1.6rem;
     max-width: 900px;
     margin: 0 auto;
   }
@@ -153,7 +160,7 @@ body {
   }
 
   .service-section h1 {
-    font-size: 40px;
+    font-size: 3.6rem;
     margin-bottom: 50px;
     text-align: center;
   }
@@ -163,7 +170,7 @@ body {
     align-items: center;
     gap: 30px;
     max-width: 1100px;
-    margin: 20px auto;
+    margin: 2rem auto;
     border-bottom: 2px solid #003f7d;
   }
   
@@ -178,12 +185,12 @@ body {
   }
   
   .service-text h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
   }
   
   .service-text p {
-    font-size: 18px;
+    font-size: 1.6rem;
   }
   
   /* Products Section */
@@ -193,8 +200,8 @@ body {
   }
 
   .product-section h1 {
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
     text-align: center;
   }
   
@@ -203,7 +210,7 @@ body {
     align-items: center;
     gap: 30px;
     max-width: 1100px;
-    margin: 20px auto;
+    margin: 2rem auto;
     border-bottom: 2px solid #003f7d;
   }
   
@@ -216,6 +223,7 @@ body {
   
   .product-text {
     width: 55%;
+    text-align: left;
   }
   
   .product-text h2 {
@@ -235,7 +243,7 @@ body {
   }
   
   .solutions h2 {
-    font-size: 36px;
+    font-size: 2.8rem;
     margin-bottom: 30px;
   }
   
@@ -269,7 +277,7 @@ body {
   }
   
   .solution-card p {
-    font-size: 18px;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #003f7d;
   }
@@ -283,14 +291,14 @@ body {
   }
 
   .our-technology h2 {
-    font-size: 36px;
+    font-size: 2.8rem;
     margin-bottom: 30px;
   }
   
   .our-technology img {
     width: 50%;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     margin: 50px auto;
   }
 
@@ -299,7 +307,7 @@ body {
   #Request{
     display: block;
     text-align: center;
-    margin: 40px auto;
+    margin: 4rem auto;
     padding: 20px 0;
 
   }
@@ -364,11 +372,11 @@ body {
   }
 
   .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   .footer-section a {
@@ -382,7 +390,7 @@ body {
   }
   
   .contact-info p {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   /* Newsletter Form */
@@ -417,8 +425,10 @@ body {
   
   /* Responsive Styles */
 
-  @media (max-width: 768px) {
-
+  @media (max-width: 48rem) {
+       html{
+        font-size: 50%;
+       }
   nav {
     position: absolute;
     top: 80px;
@@ -509,23 +519,3 @@ nav a:hover {
   }
 
 
-  /* reponsive corrections */
-
-   
-  
-  /* Responsive */
-  /* @media (max-width: 768px) { */
-    
-  
-    /* .product-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-   /* */
-    /* .hero h1 {
-      font-size: 2.2rem;
-    }
-
-    .newsletter input {
-        width: 250px; */
-      /* }  */
