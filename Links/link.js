@@ -27,8 +27,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-// Observe all elements in the body (you might want to refine this)
-document.querySelectorAll('body *').forEach((el) => observer.observe(el));
+// Observe all elements with 'fade-in' class
+document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
 
   // Hide navbar on scroll down and show on scroll up
  
