@@ -181,7 +181,7 @@ body {
   }
   
   .service-text {
-    width: 55%;
+    width: 100%;
   }
   
   .service-text h2 {
@@ -222,13 +222,14 @@ body {
   }
   
   .product-text {
-    width: 55%;
+    width: 100%;
     text-align: left;
   }
   
   .product-text h2 {
     font-size: 30px;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .product-text p {
