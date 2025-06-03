@@ -227,14 +227,22 @@ body {
   }
   
   .product-text h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
     text-align: center;
   }
   
   .product-text p {
-    font-size: 18px;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
+  
+  .product-text li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+  }
+
   
   /* Solutions Section */
   .solutions {
@@ -245,7 +253,7 @@ body {
   
   .solutions h2 {
     font-size: 2.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
   
   .solution-grid {
@@ -293,7 +301,7 @@ body {
 
   .our-technology h2 {
     font-size: 2.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
   
   .our-technology img {
