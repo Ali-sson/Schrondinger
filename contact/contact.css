@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 body{
   font-family: 'Inter', sans-serif;
 }
@@ -365,7 +369,7 @@ nav a:hover {
 /* Responsiveness */
 @media (max-width: 48rem) {
    html{
-    font-size: 60%;
+    font-size: 50%;
    }
   nav {
     position: absolute;
@@ -433,5 +437,14 @@ nav a:hover {
       font-size: 1.3rem;
       margin: 10px 0;
       width: 100%;
+    }
+
+    .contact-form {
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .hero {
+      height: 30vh;
     }
   }
