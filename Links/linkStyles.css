@@ -600,7 +600,7 @@ h1 {
 /* Responsive */
 @media (max-width: 48rem) {
   html{
-    font-size: 70%;
+    font-size: 60%;
   }
   nav {
     position: absolute;
