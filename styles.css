@@ -47,8 +47,10 @@
   }
   
   .logo img {
-    width: 70%;
+    width: 100%;
+    max-width: 150px; /* Adjust as needed */
     height: auto;
+    margin: 2rem;
   }
   
   nav ul {
@@ -65,7 +67,6 @@
   nav a {
     color: #003566;
     text-decoration: none;
-    font-weight: bold;
     font-size: 16px;
     transition: color 0.3s;
     display: block;
@@ -678,7 +679,7 @@
 
   /* Media Queries */
 
-
+/* 
   
    @media (max-width: 62.5rem) {
     html{
@@ -720,12 +721,12 @@
 
   
       
-  }
+  } */
 
   
    @media (max-width: 56.4rem) {
     html{
-      font-size: 70%;
+      font-size: 60%;
     } 
     .resource-articles {
       display: flex;
@@ -748,7 +749,7 @@
 
    @media (max-width: 50rem) {
     html{
-      font-size: 70%;
+      font-size: 60%;
     } 
     
   nav {

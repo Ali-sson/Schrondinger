@@ -318,8 +318,10 @@ h2 {
 
 
 /* Responsiveness */
-@media (max-width: 768px) {
-
+@media (max-width: 48rem) {
+    html {
+      font-size: 60%;
+    }
   nav {
     position: absolute;
     top: 80px;
