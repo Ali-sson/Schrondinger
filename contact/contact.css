@@ -206,7 +206,7 @@ nav a:hover {
   }
 
   .form-container h2{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: #555;
     font-size: 2rem;
     /* text-align: center; */
@@ -427,6 +427,10 @@ nav a:hover {
 
     .contact-form{
     margin: 0 auto;
+    }
+
+    .form-container h2 {
+      margin-top: -70px;
     }
 
     .map-container{

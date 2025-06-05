@@ -537,6 +537,10 @@ nav a:hover {
       width: 80%;
     }
 
+    .hero {
+      height: 30vh;
+    }
+
   }
 
 
