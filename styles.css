@@ -32,25 +32,24 @@
   
   
   /* Header */
-  header.navbar {
+ 
+/* Header */
+header.navbar {
     background-color: #F9F9F9;; /* Deep Blue */
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8%;
+    padding: 20px 8%;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: top 0.4s ease, opacity 0.4s ease;
   }
   
   .logo img {
     width: 150px;
-    /* max-width: 150px; Adjust as needed */
     height: auto;
-    margin: 2rem 0;
   }
   
   nav ul {
@@ -59,13 +58,13 @@
     gap: 25px;
     position: relative;
   }
-
+  
   nav ul li {
     position: relative;
   }
   
   nav a {
-    color: #003566; /* Deep Blue */
+    color: #003566;; /* Deep Blue */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.6rem;
@@ -76,6 +75,8 @@
   nav a:hover {
     color: #38B6FF; /* Soft blue hover effect */
   }
+  
+  
 
 
   
@@ -766,11 +767,12 @@
 
 
 
-   @media (max-width: 48rem) {
-    html{
-      font-size: 50%;
-    } 
-    
+   
+  
+  @media (max-width: 48rem) {
+       html{
+        font-size: 50%;
+       }
   nav {
     position: absolute;
     top: 80px;
@@ -785,7 +787,7 @@
     flex-direction: column;
     padding: 1rem;
     background:#4da6ff;
-    height: 100vh; 
+    /* height: 100vh; */
   }
 
   .hamburger {
@@ -811,7 +813,7 @@
 }
 
 nav a:hover {
-   background-color: transparent; 
+  /* background-color: transparent; */
   color: #fff !important;
 }
 
