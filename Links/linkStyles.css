@@ -68,13 +68,15 @@ nav ul li {
   position: relative;
 }
 
-nav a {
-  color: #003566; /* Deep Blue */
-  text-decoration: none;
-  font-size: 1.6rem;
-  transition: color 0.3s;
-  display: block;
-}
+ nav a {
+    color: #003566; /* Deep Blue */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+    display: block;
+  }
+  
 
 nav a:hover {
   color: #38B6FF; /* Soft blue hover effect */

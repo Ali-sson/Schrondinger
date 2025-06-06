@@ -50,6 +50,7 @@
     width: 150px;
     /* max-width: 150px; Adjust as needed */
     height: auto;
+    margin: 2rem 0;
   }
   
   nav ul {
@@ -772,7 +773,7 @@
     
   nav {
     position: absolute;
-    top: 50px;
+    top: 80px;
     right: 0;
     background: #4da6ff ;
     width: 100%;

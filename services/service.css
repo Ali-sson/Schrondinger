@@ -52,7 +52,7 @@ header.navbar {
   }
   
   nav a {
-    color: #003566; /* Deep Blue */
+    color: #003566;; /* Deep Blue */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.6rem;
