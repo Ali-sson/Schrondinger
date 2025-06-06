@@ -47,10 +47,9 @@
   }
   
   .logo img {
-    width: 100%;
-    max-width: 150px; /* Adjust as needed */
+    width: 150px;
+    /* max-width: 150px; Adjust as needed */
     height: auto;
-    margin: 2rem;
   }
   
   nav ul {
@@ -65,9 +64,10 @@
   }
   
   nav a {
-    color: #003566;
+    color: #003566; /* Deep Blue */
     text-decoration: none;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 1.6rem;
     transition: color 0.3s;
     display: block;
   }
@@ -643,11 +643,11 @@
   }
 
   .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   .footer-section a {
@@ -661,8 +661,9 @@
   }
   
   .contact-info p {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
+ 
   
   /* Newsletter Form */
   .newsletter form {
@@ -764,14 +765,14 @@
 
 
 
-   @media (max-width: 50rem) {
+   @media (max-width: 48rem) {
     html{
-      font-size: 60%;
+      font-size: 50%;
     } 
     
   nav {
     position: absolute;
-    top: 80px;
+    top: 50px;
     right: 0;
     background: #4da6ff ;
     width: 100%;
@@ -848,6 +849,7 @@ nav a:hover {
 
   .hero h1 {
     font-size: 2rem;
+    letter-spacing: -1px;
   }
 
   .hero p {
@@ -868,6 +870,11 @@ nav a:hover {
 
   .newsletter input {
         width: 250px;
+      }
+
+      .quote-form-section {
+        max-width: 80%;
+        margin: 2rem auto;
       }
   
   }

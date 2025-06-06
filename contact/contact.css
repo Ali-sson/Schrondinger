@@ -451,4 +451,8 @@ nav a:hover {
     .hero {
       height: 30vh;
     }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin: 20px auto;
+    }
   }
